@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>TicTacToe</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
+
 <body>
+    <header>
+
+        <select name="choose-game" id="choose-game">
+            <option value="game1" hidden>Selecting...</option>
+            <option value="game1">TicTacToe</option>
+            <option value="game1">***</option>
+            <option value="game1">***</option>
+        </select>
+
+        <h1>Tic Tac Toe</h1>
+
+        <h2>You are:<span id="select-shape"></span></h2>
+
+    </header>
+
+    <h2>Turn: </h2>
     
+    <div id="container">
+        <div id="frame">
+            <button class="shape-container1" value="null"></button>
+            <button class="shape-container2" value="null"></button>
+            <button class="shape-container3" value="null"></button>
+            <button class="shape-container4" value="null"></button>
+            <button class="shape-container5" value="null"></button>
+            <button class="shape-container6" value="null"></button>
+            <button class="shape-container7" value="null"></button>
+            <button class="shape-container8" value="null"></button>
+            <button class="shape-container9" value="null"></button>
+        </div>
+    </div>
+
+
+
+    <footer>
+
+        <button>Clean board</button>
+
+        <h3>Wins: </h3>
+    </footer>
+
+    <script src='main.js'></script>
 </body>
+
 </html>
