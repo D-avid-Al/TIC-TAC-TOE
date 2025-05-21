@@ -68,10 +68,10 @@ header > h2 {
   height: max-content;
 }
 
-#frame button {
+.square {
   font-size: 80px;
-  background-color: #e06e8e;
-  border-radius: 10px;
+  background-color: #e09baf;
+  border-radius: 5px;
   width: 120px;
   height: 120px;
   justify-content: center;
@@ -81,7 +81,33 @@ header > h2 {
   transition: 0.5s;
 }
 
-#frame button:hover{
-background-color: blueviolet;
+.square:hover{
+background-color: rgba(43, 226, 202, 0.144);
 }
 
+footer {
+  display: flex;
+border-radius: 10px;
+  width: 25%;
+  background-color: #e06e8e6c;
+  text-align: center;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+#clear-board {
+  font-weight: bold;
+  font-size: 15px;
+color: #926db5;
+  background-color: #e06e8e;
+  border-radius: 5px;
+  width: 120px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s
+}
