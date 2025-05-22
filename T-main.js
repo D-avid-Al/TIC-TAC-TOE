@@ -1,4 +1,8 @@
 const turn = document.getElementById('turn');
+turn.innerText = 'X';
+
+const resultsScreen = document.getElementById('resultsScreen');
+const resultsText = document.getElementById('resultsText');
 //---------futuro lo de selectiong---------
 const squares = document.querySelectorAll(".square");
 const container = Array.from(squares);
@@ -29,7 +33,7 @@ const controlarJugabilidad = (cell) => {
 
     const ganador = verificarGanador();
     if (ganador) {
-        console.log("Gano: " + ganador);
+        resultsScreen.style.zIndex = 10;
     }
 }
 
@@ -47,12 +51,14 @@ const verificarGanador = () => {
             container[a].innerText == container[b].innerText &&
             container[a].innerText == container[c].innerText) {
             juego = 'OFF';
+            container[a].innerText == 'X'? resultsText.innerText = 'You win' : resultsText.innerText = 'You Lose'; 
             return container[a].innerText;
         }
     }
     // Empate: si no hay espacios vacíos y nadie ganó
     if (container.every(cell => cell.innerText !== "")) {
         juego = 'OFF';
+        resultsText.innerText = 'Draw';
         return "Empate";
     }
     return null;
@@ -63,6 +69,7 @@ const resetearJuego = () => {
     cont = 0;
     juego = 'ON';
     turn.innerText = 'X';
+    resultsScreen.style.zIndex = -10;
 }
 
 clearBoard.addEventListener('click', resetearJuego);

@@ -112,3 +112,23 @@ footer {
   cursor: pointer;
   transition: 0.5s;
 }
+
+#resultsScreen{
+  width: 25vw;
+  height: 25vh;
+  background-color: #e06e8e79;
+  position: absolute;
+  top: 34%;    /* distancia desde arriba */
+  left: 50%;   /* distancia desde la izquierda */
+  z-index: -10;  /* valor alto = encima del fondo */
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#resultsText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
