@@ -21,12 +21,14 @@
 
         <h1>Tic Tac Toe</h1>
 
-        <h2>You are:<span id="select-shape"></span></h2>
+        <h2>You are:<span id="selecShape"></span></h2>
 
     </header>
 
-    <h2>Turn: </h2>
-    
+    <h2>Turn: <span id="turn"></span></h2>
+    <div id="resultsScreen">
+        <h1 id="resultsText">You win</h1>
+    </div>
     <div id="container">
         <div id="frame">
             <button class="square" id="shape-container1" value="null"></button>
@@ -46,7 +48,7 @@
     <footer>
         <h3>Wins: </h3>
 
-        <button id="clear-board">Clean board</button>
+        <button id="clearBoard">Clean board</button>
 
     </footer>
 
