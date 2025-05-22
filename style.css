@@ -79,16 +79,17 @@ header > h2 {
   border: none;
   cursor: pointer;
   transition: 0.5s;
+  color: #926db5;
 }
 
-.square:hover{
-background-color: rgba(43, 226, 202, 0.144);
+.square:hover {
+  background-color: #e0809b;
 }
 
 footer {
   display: flex;
-border-radius: 10px;
-  width: 25%;
+  border-radius: 10px;
+  width: 50%;
   background-color: #e06e8e6c;
   text-align: center;
   padding: 10px;
@@ -97,10 +98,10 @@ border-radius: 10px;
   margin: 20px 10px;
 }
 
-#clear-board {
+#clearBoard {
   font-weight: bold;
   font-size: 15px;
-color: #926db5;
+  color: #926db5;
   background-color: #e06e8e;
   border-radius: 5px;
   width: 120px;
@@ -109,5 +110,5 @@ color: #926db5;
   align-items: center;
   border: none;
   cursor: pointer;
-  transition: 0.5s
+  transition: 0.5s;
 }
